@@ -8,7 +8,7 @@ Each microservice will encapsulate business-specific functionality, enabling gre
 ## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [File Structure](#file-structure)
+- [Project Structure](#project-structure)
 
 
 ## Prerequisites
