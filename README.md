@@ -1,4 +1,4 @@
-# Employe System
+# Employee System
 
 This project aims to develop a scalable and highly maintainable platform, using a microservices architecture based on hexagonal architecture principles. 
 Each microservice will encapsulate business-specific functionality, enabling greater agility in independent development, deployment, and scaling.
