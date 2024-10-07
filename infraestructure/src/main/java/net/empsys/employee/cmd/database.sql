@@ -1,0 +1,14 @@
+DROP DATABASE IF EXISTS empsys;
+CREATE DATABASE empsys;
+USE empsys;
+
+CREATE TABLE IF NOT EXISTS employee(
+	id INT PRIMARY KEY NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    date DATETIME NOT NULL,
+    salary DOUBLE(10, 2) NOT NULL,
+    highlighted INT NOT NULL,
+    image VARCHAR(255) NOT NULL
+);
+
