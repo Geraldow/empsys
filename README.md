@@ -21,7 +21,7 @@ Each microservice will encapsulate business-specific functionality, enabling gre
   -  Eclipse
   -  NetBeans
   -  Spring Tool Suite (STS) 
-- Base de datos
+- Database
   - Configure a database (MySQL, PostgreSQL) and update application.properties.
 - Run the following command in the root of the project:
   - `mvn clean install`
@@ -39,7 +39,7 @@ mvn clean install
 mvn spring-boot:run
 
 # In the browser navigate to:
-http://localhost:8080
+http://localhost:8080/empsys
 ```
 
 ## Project Structure
@@ -61,7 +61,7 @@ empsys
 │   │   │   ├── resources
 │   │   │   │   ├── static
 │   │   │   │       ├── css
-│   │   │   │       ├── images
+│   │   │   │       └── images
 │   │   │   │   └── templates
 │   │   │   └── application.properties
 │   │   └── test
@@ -80,14 +80,14 @@ empsys
 │   │   │   └── java
 │   │   │   │   └── net.empsys
 │   │   │   │       ├── employees
-│   │   │   │       │   ├── event
+│   │   │   │       │   ├── contract
 │   │   │   │       │   ├── model
 │   │   │   │       │   └── service
 │   │   │   │       └── vacancies
-│   │   │   │           ├── event
+│   │   │   │           ├── contract
 │   │   │   │           ├── model
 │   │   │   │           └── service
-│   │   │   ├── resources
+│   │   │   └── resources
 │   │   └── test
 │   └── pom.xml
 ├── infraestructure
@@ -96,11 +96,11 @@ empsys
 │   │   │   └── java
 │   │   │   │   └── net.empsys
 │   │   │   │       ├── config
-│   │   │   │       │ 	  employees
+│   │   │   │       ├── employees
 │   │   │   │       │   ├── cmd
-│   │   │   │       │   ├── repository
+│   │   │   │       │   └── repository
 │   │   │   │       └── messaging
-│   │   │   ├── resources
+│   │   │   └── resources
 │   │   └── test
 │   └── pom.xml
 └── pom.xml
